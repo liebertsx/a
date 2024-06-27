@@ -53,7 +53,7 @@ function lib:Create(key, link, script)
     Desc.BackgroundTransparency = 0.1
     Desc.BorderSizePixel = 0
     Desc.Size = UDim2.new(1, 0, 0, 50)
-    Desc.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Desc.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 
     local KeyInput = Instance.new("TextBox", Frame)
     KeyInput.Name = "KeyInput"
