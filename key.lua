@@ -27,6 +27,7 @@ function lib:Create(key, link, script)
     Title.BackgroundTransparency = 0.1
     Title.BorderSizePixel = 0
     Title.Size = UDim2.new(0, 325, 0, 50)
+    Title.BackgroundColor3 = Color3.fromRGB(30,30,30)
     Instance.new("UICorner", Title)
 
     local exit = Instance.new("ImageButton", Title)
@@ -52,6 +53,7 @@ function lib:Create(key, link, script)
     Desc.BackgroundTransparency = 0.1
     Desc.BorderSizePixel = 0
     Desc.Size = UDim2.new(0, 325, 0, 50)
+    Desc.BackgroundColor3 = Color3.FromRGB(40,40,40)
 
     local KeyInput = Instance.new("TextBox", Frame)
     KeyInput.Name = "KeyInput"
@@ -64,7 +66,9 @@ function lib:Create(key, link, script)
     KeyInput.Position = UDim2.new(0, 10, 0, 100)
     KeyInput.BackgroundTransparency = 0.1
     KeyInput.BorderSizePixel = 0
-
+    KeyInput.BackgroundColor3 = Color3.FromRGB(40,40,40)
+    Instance.new("UICorner", KeyInput)
+    
     local GetKey = Instance.new("TextButton", Frame)
     GetKey.Name = "GetKey"
     GetKey.Font = Enum.Font.BuilderSansExtraBold
