@@ -4,6 +4,7 @@ local Decompile, Libraries = {
   WaitDecompile = false,
   getupvalues = false,
   getconstants = false,
+  file = true
 }, {
   "bit32",
   "buffer",
