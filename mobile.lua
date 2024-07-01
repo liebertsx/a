@@ -4,7 +4,6 @@ local Decompile, Libraries = {
   WaitDecompile = false,
   getupvalues = false,
   getconstants = false,
-  setclipboard = true
 }, {
   "bit32",
   "buffer",
@@ -250,7 +249,7 @@ function Decompile.new(part)
     table.insert(list, Val)
   end)
   
-  if Decompile.fole then
+  if Decompile.file then
     writefile("Decompile.lua",Var .. "\n" .. Script .. "\n}")
   end
   return (Var .. "\n" .. Script .. "\n}")
