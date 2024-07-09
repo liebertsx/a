@@ -223,7 +223,9 @@ function stealgui(gui, parentIdentifier)
         end
   end
   print('Finished stealing gui!')
-  return "--[[GENERATED WITH GUISTEALER, JOIN THE DISCORD OR REPORT BUGS IN https://discord.gg/gYhqMRBeZV]]\n" ..Code
+  return "-- GuiStealer 1.0\n -- Conveted\n" ..Code
 end
+
+getgenv().steal = stealgui
 
 return stealgui
